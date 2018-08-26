@@ -23,7 +23,7 @@ public class Test {
         } finally {
             jedis.close();
         }
-        System.out.println("床位初始化成功：ROOM_BED_1 ROOM_BED_2 ROOM_BED_3 ROOM_BED_4");
+        System.out.println("床位初始化成功，一共4个空床位：BED_1 BED_2 BED_3 BED_4");
     }
 
     /**
