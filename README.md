@@ -1,1 +1,2 @@
-# choose-room
+# 使用redis实现并发锁，解决高并发下的学生争抢宿舍床位从而引起的并发问题
+使用java的多线程与redis的pipeline、watch、mutil等命令模拟学生并发争抢宿舍床位的过程
