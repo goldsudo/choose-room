@@ -46,7 +46,7 @@ public class Test {
     }
 
     /**
-     * 打印最终选房结果
+     * 8个学生抢4个床位（即一个宿舍）
      */
     public static void chooseRoomBed(List<Student> students) throws InterruptedException {
         //创建每个学生的抢房线程
@@ -65,6 +65,9 @@ public class Test {
         System.out.println("模拟选房执行完毕");
     }
 
+    /**
+     * 打印最终选房结果
+     */
     public static void printResult() {
         System.out.println("-----本次模拟选房结果-----");
         Jedis jedis = pool.getResource();
@@ -85,7 +88,7 @@ public class Test {
     public static void main(String[] args) throws InterruptedException {
         initRoomBed();
         List<Student> students = initStudent();
-        //8个学生抢4个床位（即一个宿舍）
+
         chooseRoomBed(students);
         printResult();
     }
